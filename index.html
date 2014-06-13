@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="utf-8" />
+    <title>SublimeTxet3をはじめよう</title>
+    <meta name="description" content="A beautiful TextEditor SublimeTxet3 is ...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bijou.min.css">
+  </head>
+  <body>
+    <div class="navbar fixed">
+      <div class="container">
+        <h1 class="pull-left bitbor">SublimeTxet3をはじめよう</h1>
+      </div>
+    </div>
+    <div class="container">
+<h2 class="explainer">About SublimeText</h2>
+  <p>SublimeText（以下ST）のバージョンは2と3がありますが、現在進行中のプロジェクトは3なので、3をインストールしましょう。</p>
+  <p>エディタ。<br>
+軽いのが特徴。<br>
+プラグインで自分好みのエディタにカスタム出来るのがいい感じ。<br>
+プラグインはめちゃあるので、選択肢は無限大ｗ</p>
+  <a href="http://www.sublimetext.com/3" alt="SublimeText">http://www.sublimetext.com/3</a> 
+ <div class="divider"></div>
+<h2 class="explainer">初期設定</h2>
+<p>Sublimetext → Preferences → Setteings-User</p>
+<h3>JSONで記述</h3>
+<p>こんな感じで</p>
+<pre>
+   "auto_indent": true,
+    "font_size": 18,
+    "font_face": "Source Code Pro Meduim",
+    "highlight_line": true,
+    "scroll_past_end": true,
+    "scroll_speed": 1.0,
+    "smart_indent": false,
+    "word_wrap": false
+</pre>
+ <div class="divider"></div>
+<h2 class="explainer">Pakage Install</h2>
+<p>なにはともあれまずはパッケージインストール</p>
+<p>そのためにパッケージコントロールをインストール</p>
+<a href="https://sublime.wbond.net/installation" alt="https://sublime.wbond.net/installation">https://sublime.wbond.net/installation</a>
+<p>View → ShowConsoleで以下をコピペ</p>
+<pre>import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)</pre>
+<p>っターン</p>
+<p>ショートカット「cmd+shift+P」でパッケージコントロールが使えるようになる</p>
+ <div class="divider"></div>
+<h2 class="explainer">必須パッケージ</h2>
+<h3>Emmet</h3>
+<p>zen-codingの後継。 早くコードを書くためになくてはならない。</p>
+<h3>hayaku</h3>
+<p>cssを早くかける。ゆるい感じの展開でもきちんとしてくれる</p>
+<h3>Auto Filename</h3>
+<p>パスからファイル名を取得</p>
+<h3>SideBarEnhancements</h3>
+<p>サイドバーの拡張</p>
+ <div class="divider"></div>
+
+<h2 class="explainer">Theme/icon</h2>
+<p>見た目大事。自分のモチベーションのために。</p>
+<h3>ColorSchemeを変更する</h3>
+<p>Sublimetext → Preferences → Color Scheme</p>
+<h3>Themeも変更</h3>
+<p>例）Flatlandの場合</p>
+<pre>"theme": "Flatland Dark.sublime-theme",</pre>
+
+<h3>アイコンも変更</h3>
+<p>アイコンの格納場所</p>
+<pre>/Applications/Sublime Text.app/Contents/Resources/Sublime Text.icns </pre>
+<div class="divider"></div>
+  
+
+<h2 class="explainer">参考資料</h2>
+<ul>
+  <li><a href="http://powerful-code.com/blog/2012/11/plugins-for-st2/" alt="[SublimeText2]「第0回 Sublime Text 2 勉強会」で紹介されたプラグインまとめ">[SublimeText2]「第0回 Sublime Text 2 勉強会」で紹介されたプラグインまとめ</a></li>
+  <li><a href="https://dribbble.com/shots/1027361-Sublime-Text-icon-replacement-for-Flatland-Theme" alt="Sublime Text icon replacement for Flatland Theme">Sublime Text icon replacement for Flatland Theme</a></li>
+  <li><a href="https://gist.github.com/gaspanik/4096301" alt="こもりさんの環境設定">こもりさんの環境設定</a></li>
+  <li><a href="http://blogg.urre.me/post/sublime-text/" alt="Sublime Text">Sublime Text</a></li>
+  <li><a href="https://www.facebook.com/sublimetextforwebdev" alt="Web制作者のためのSublime Textの教科書">Web制作者のためのSublime Textの教科書</a></li>
+  <li><a href="http://www.mkdown.com/7412f0a4047cb01998f2" alt="Installed packages">Installed packages</a></li>
+</ul>
+    </div>
+  </body>
+
+
+
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</html>
